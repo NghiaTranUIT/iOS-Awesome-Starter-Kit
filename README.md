@@ -16,8 +16,12 @@
 Awesome iOS Starter Kit
 ------------
  
-The starter kit is designed to help iOS develop can implement their app quickly and resolve common problem easily.
-It includes bunch of framework at top of technologies, inlcude new Clean Wwift Architecture. 
+ <h3 align="center">
+    <img src="https://raw.githubusercontent.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/master/Screenshots/starter-kit.png" width="40%" />
+</h3>
+ 
+The starter kit is designed to help iOS develop can implement their app quickly and resolve common problem easily.  
+It includes bunch of framework at top of technologies, inlcude new Clean Wwift Architecture.   
 Beside that, this project also use faimilar technologies from frontEnd, such as Promise, ReSwift,... help front-end guy approach easier.
   
 ![](https://img.shields.io/badge/Swift-3.0-blue.svg?style=flat)
