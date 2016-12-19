@@ -5,8 +5,9 @@
   
 <p align="center">
   <a href="http://nghiatran.me">Mad lab</a> &bull;
-  <a href="https://github.com/NghiaTranUIT/FeSpinner">FeSpinner</a> &bull;
   <a href="https://github.com/NghiaTranUIT/Titan-Postgresql">TITAN</a> &bull;
+  <a href="https://github.com/NghiaTranUIT/FeSpinner">FeSpinner</a> &bull;
+  <br> &nbsp;
   <b>iOS Awesome Starter Kit</b> &bull;
   <a href="https://github.com/NghiaTranUIT/FeSlideFilter">FeSlideFilter</a> &bull;
   <a href="https://github.com/NghiaTranUIT/Responsive-Interaction-Control">Responsive Interaction Control</a>
