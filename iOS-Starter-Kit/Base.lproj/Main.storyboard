@@ -12,7 +12,7 @@
         <!--Github Search-->
         <scene sceneID="r0r-G4-OF8">
             <objects>
-                <viewController id="638-Er-ECn" customClass="RepoViewController" customModule="iOS_Starter_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="638-Er-ECn" customClass="RepoController" customModule="iOS_Starter_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mDM-GT-VPL"/>
                         <viewControllerLayoutGuide type="bottom" id="3V2-g1-y9M"/>
@@ -43,8 +43,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Github Search" id="FJL-FY-Qc6"/>
                     <connections>
-                        <outlet property="searchBar" destination="rZi-6m-RBS" id="u43-En-J2H"/>
-                        <outlet property="tableView" destination="F4G-om-Pu5" id="kOG-Ag-rwX"/>
+                        <outlet property="searchBar" destination="rZi-6m-RBS" id="Ovm-9N-ajR"/>
+                        <outlet property="tableView" destination="F4G-om-Pu5" id="kWK-cB-bdX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlc-Da-jap" userLabel="First Responder" sceneMemberID="firstResponder"/>

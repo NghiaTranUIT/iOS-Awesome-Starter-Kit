@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol RepoPresenterOutput: class {
     
@@ -23,6 +24,10 @@ class RepoPresenter {
     
     //
     // MARK: - Variable
+    fileprivate var repos: Variable<[RepoObj]> {
+        return mainStore.state.repoState!.repos
+    }
+    
     
     /// Output
     weak var output: RepoPresenterOutput?
@@ -40,11 +45,7 @@ extension RepoPresenter: RepoInteractorOutput {
 // MARK: - Data Source
 extension RepoPresenter: RepoControllerDataSource {
     
-    func numberOfRepo() -> Int {
-        return 0
-    }
-    
-    func repoAtRow(row: Int) -> RepoObj {
-    
+    func repoDataSource() -> UITableViewDataSource {
+        return RepoDataSource()
     }
 }

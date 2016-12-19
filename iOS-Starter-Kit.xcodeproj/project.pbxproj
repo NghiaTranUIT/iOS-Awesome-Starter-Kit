@@ -38,6 +38,7 @@
 		BA790E091E079B9E00614854 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E061E079B9E00614854 /* QueueManager.swift */; };
 		BA790E0A1E079B9E00614854 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E071E079B9E00614854 /* Request.swift */; };
 		BA790E121E079C8300614854 /* Error+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E111E079C8300614854 /* Error+Default.swift */; };
+		BA790E181E07A77100614854 /* RepoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E171E07A77100614854 /* RepoDataSource.swift */; };
 		BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96387F1E07800300D16B73 /* AppDelegate.swift */; };
 		BA9638851E07800300D16B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9638831E07800300D16B73 /* Main.storyboard */; };
 		BA9638871E07800300D16B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9638861E07800300D16B73 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		BA790E061E079B9E00614854 /* QueueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
 		BA790E071E079B9E00614854 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BA790E111E079C8300614854 /* Error+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Default.swift"; sourceTree = "<group>"; };
+		BA790E171E07A77100614854 /* RepoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDataSource.swift; sourceTree = "<group>"; };
 		BA96387C1E07800300D16B73 /* iOS-Starter-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Starter-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA96387F1E07800300D16B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9638841E07800300D16B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		BA790DCB1E07852B00614854 /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				BA790E161E07A76700614854 /* DataSource */,
 				BA790DD71E0786FC00614854 /* Worker */,
 				BA790DFB1E078D7800614854 /* View */,
 				BA790DDB1E07878500614854 /* Controller */,
@@ -291,9 +294,9 @@
 			isa = PBXGroup;
 			children = (
 				BA790DB41E07850500614854 /* RepoController.swift */,
-				BA790DB31E07850500614854 /* RepoConfiguration.swift */,
 				BA790DB51E07850500614854 /* RepoInteractor.swift */,
 				BA790DB71E07850500614854 /* RepoPresenter.swift */,
+				BA790DB31E07850500614854 /* RepoConfiguration.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -423,6 +426,14 @@
 				BA790E111E079C8300614854 /* Error+Default.swift */,
 			);
 			name = Error;
+			sourceTree = "<group>";
+		};
+		BA790E161E07A76700614854 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BA790E171E07A77100614854 /* RepoDataSource.swift */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 		BA9638731E07800200D16B73 = {
@@ -647,6 +658,7 @@
 				BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */,
 				BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */,
 				BA790E121E079C8300614854 /* Error+Default.swift in Sources */,
+				BA790E181E07A77100614854 /* RepoDataSource.swift in Sources */,
 				BA790DBE1E07850500614854 /* Networking.swift in Sources */,
 				BA790DE61E0789A200614854 /* BaseViewController.swift in Sources */,
 				BA790DBF1E07850500614854 /* RepoConfiguration.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import ReSwift
+import RxSwift
 
 //
 // MARK: - Repo
@@ -15,7 +16,7 @@ struct RepoState: StateType {
 
     
     /// Repos list
-    var repos: [RepoObj] = []
+    var repos = Variable<[RepoObj]>([])
 }
 
 
@@ -25,14 +26,14 @@ extension RepoState {
     static func reducer(action: Action, state: RepoState?) -> RepoState {
         
         // Get state
-        var state = state ?? RepoState()
+        let state = state ?? RepoState()
         
         // Doing
         switch action {
         case let action as UpdateRepoListAction:
             
             /// Update here
-            state.repos = action.repos ?? []
+            state.repos.value = action.repos ?? []
             
             break
         default:
