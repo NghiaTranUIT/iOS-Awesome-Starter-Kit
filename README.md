@@ -34,6 +34,10 @@ What's inside
 + Userful classes: Networking, BaseObj, Logger, ApplicationManager, Identifier, Registerable, BaseAbility, Worker, Slack Report,....
 + ...
 
+Presentation at Swift Vietnam
+------------
+[Slide](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)
+[Video Facebook](https://www.facebook.com/swift.org.vn/videos/537074413148880/) 🔴 59:00
 
 Reference
 ------------
