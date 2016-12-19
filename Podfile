@@ -17,7 +17,8 @@ def important_pods
     pod 'ObjectMapper', '~> 2.2'
     pod 'ReSwift'
     pod 'PromiseKit', '~> 4.0'
-
+    pod 'SwiftyBeaver'
+    
     # Observable
     pod 'RxSwift',    '~> 3.0'
 end

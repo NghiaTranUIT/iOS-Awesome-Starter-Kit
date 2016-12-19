@@ -32,13 +32,8 @@ class Networking {
     func fetchRepoWithText(text: String) -> Promise<[RepoObj]> {
         
         return Promise { fulfill, reject in
-            
-            // Encoding
-            let escapedQuery = text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
-            
-            // url
-            let url = URL(string: "https://api.github.com/search/repositories?q=\(escapedQuery)")!
-            
+    
+
             // Query
             Alamofire.request(url)
                 .validate()
@@ -63,55 +58,5 @@ class Networking {
             }
         }
     }
-    
-    
-    // Fetch current user
-    func fetchCurrentUser() {
-        
-        // Fetch current user
-        let urlCurrentUser = URL(string: "/user")!
-        Alamofire.request(urlCurrentUser)
-        .validate()
-        .responseJSON { (response) in
-            
-            // Check
-            switch response.result {
-            case .success:
-                
-                // Check
-                switch response.result {
-                case .success:
-                    
-                    // Fetch Setting
-                    let urlSetting = URL(string: "/setting")!
-                    Alamofire.request(urlSetting)
-                        .validate()
-                        .responseJSON(completionHandler: { (response) in
-                            
-                            // Fetch notification
-                            let urlNotification = URL(string: "/notification")!
-                            Alamofire.request(urlNotification)
-                                .validate()
-                                .responseJSON(completionHandler: { (response) in
-                                    
-                                    // Fetch more here
-                                    // -> 😡 Too much call-back
-                                    
-                                })
-                        })
-                case .failure(let error):
-                    
-                    // Handle error
-                    print("fail \(error)") // -> 😡 Duplicated
-                    break
-                }
-                
-            case .failure(let error):
-                
-                // Handle error
-                print("fail \(error)") // -> 😡 Duplicated
-                break
-            }
-        }
-    }
+
 }

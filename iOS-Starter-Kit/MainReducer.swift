@@ -21,11 +21,7 @@ extension MainReducer: Reducer {
         // Repo state
         let repoState = RepoState.reducer(action: action, state: state?.repoState)
         
-        
-        // Setting
-        let settingState = SettingState.reducer(action: action, state: state?.settingState)
-        
         // return
-        return MainAppState(repoState: repoState, settingState: settingState)
+        return MainAppState(repoState: repoState)
     }
 }

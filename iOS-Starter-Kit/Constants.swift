@@ -110,18 +110,22 @@ struct Constants {
         }
     }
     
-    
-    // Slack Report
-    struct Slack {
+    //
+    // MARK: - Logger
+    struct Logger {
         
-        // Base
-        static let Token = "your.token.slack"
-        static let ErrorChannel = "name.error.slack.channel"
-        static let ResponseChannel = "name.response.slack.channel"
-        
-        
-        // Webhook integration
-        static let ErrorChannel_Webhook = "webhook.error.channel"
-        static let ResponseChannel_Webhook = "webhook.response.channel"
+        // Slack Report
+        struct Slack {
+            
+            // Base
+            static let Token = "your.token.slack"
+            static let ErrorChannel = "name.error.slack.channel"
+            static let ResponseChannel = "name.response.slack.channel"
+            
+            
+            // Webhook integration
+            static let ErrorChannel_Webhook = "webhook.error.channel"
+            static let ResponseChannel_Webhook = "webhook.response.channel"
+        }
     }
 }

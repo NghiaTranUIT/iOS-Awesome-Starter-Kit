@@ -16,8 +16,5 @@ struct MainAppState: StateType {
     
     /// Repo State
     let repoState: RepoState?
-    
-    
-    /// Setting State
-    let settingState: SettingState?
+
 }

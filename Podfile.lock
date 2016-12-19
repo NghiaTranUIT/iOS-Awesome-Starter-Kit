@@ -14,6 +14,7 @@ PODS:
     - PromiseKit/CorePromise
   - ReSwift (3.0.0)
   - RxSwift (3.0.1)
+  - SwiftyBeaver (1.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - PromiseKit (~> 4.0)
   - ReSwift
   - RxSwift (~> 3.0)
+  - SwiftyBeaver
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
@@ -28,7 +30,8 @@ SPEC CHECKSUMS:
   PromiseKit: c98453ff78544c0ad5bb0ea980782e6875f47978
   ReSwift: f0255f4b4f2dacd12c5d97d34d13fc5dad6d6371
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SwiftyBeaver: 2b68694df862381235e32bcfc4ec991e26bf131d
 
-PODFILE CHECKSUM: 0329d2d3da3c94a508dba78b3255f862e59162d7
+PODFILE CHECKSUM: 859dba3caddad084a98ae222beaea1964edfdf1d
 
 COCOAPODS: 1.1.1

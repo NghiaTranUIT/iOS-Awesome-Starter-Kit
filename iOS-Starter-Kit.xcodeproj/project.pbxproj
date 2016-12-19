@@ -20,6 +20,19 @@
 		BA790DC51E07850500614854 /* UserObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DB91E07850500614854 /* UserObj.swift */; };
 		BA790DC61E07850500614854 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DBA1E07850500614854 /* Worker.swift */; };
 		BA790DD51E0785EA00614854 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DD41E0785EA00614854 /* Constants.swift */; };
+		BA790DE11E07898300614854 /* BaseAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DE01E07898300614854 /* BaseAbility.swift */; };
+		BA790DE51E0789A200614854 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DE21E0789A200614854 /* BaseView.swift */; };
+		BA790DE61E0789A200614854 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DE31E0789A200614854 /* BaseViewController.swift */; };
+		BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DE91E078A2800614854 /* UICollectionView+Register.swift */; };
+		BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DEA1E078A2800614854 /* UITableView+Register.swift */; };
+		BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */; };
+		BA790DF01E078A2800614854 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DEC1E078A2800614854 /* UIView+Identifier.swift */; };
+		BA790DF31E078A3B00614854 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DF21E078A3B00614854 /* Identifier.swift */; };
+		BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DF51E078C2100614854 /* ApplicationManager.swift */; };
+		BA790DF91E078C2D00614854 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DF81E078C2D00614854 /* Logger.swift */; };
+		BA790DFE1E078D8A00614854 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DFC1E078D8A00614854 /* RepoCell.swift */; };
+		BA790DFF1E078D8A00614854 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA790DFD1E078D8A00614854 /* RepoCell.xib */; };
+		BA790E011E078DE700614854 /* SlackReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E001E078DE700614854 /* SlackReporter.swift */; };
 		BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96387F1E07800300D16B73 /* AppDelegate.swift */; };
 		BA9638851E07800300D16B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9638831E07800300D16B73 /* Main.storyboard */; };
 		BA9638871E07800300D16B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9638861E07800300D16B73 /* Assets.xcassets */; };
@@ -53,6 +66,19 @@
 		BA790DB91E07850500614854 /* UserObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObj.swift; sourceTree = "<group>"; };
 		BA790DBA1E07850500614854 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		BA790DD41E0785EA00614854 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA790DE01E07898300614854 /* BaseAbility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAbility.swift; sourceTree = "<group>"; };
+		BA790DE21E0789A200614854 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BA790DE31E0789A200614854 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BA790DE91E078A2800614854 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
+		BA790DEA1E078A2800614854 /* UITableView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Identifier.swift"; sourceTree = "<group>"; };
+		BA790DEC1E078A2800614854 /* UIView+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		BA790DF21E078A3B00614854 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		BA790DF51E078C2100614854 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		BA790DF81E078C2D00614854 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BA790DFC1E078D8A00614854 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		BA790DFD1E078D8A00614854 /* RepoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		BA790E001E078DE700614854 /* SlackReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackReporter.swift; sourceTree = "<group>"; };
 		BA96387C1E07800300D16B73 /* iOS-Starter-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Starter-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA96387F1E07800300D16B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9638841E07800300D16B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +132,10 @@
 		BA790DC81E07850E00614854 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BA790DFA1E078C3100614854 /* Application */,
+				BA790DF71E078C2400614854 /* Logger */,
+				BA790DE81E0789A400614854 /* Base */,
+				BA790DDE1E07897500614854 /* Extensions */,
 				BA790DD81E07870E00614854 /* Obj Model */,
 				BA790DCD1E07853D00614854 /* Store */,
 				BA790DCC1E07853900614854 /* Worker */,
@@ -124,6 +154,7 @@
 		BA790DCA1E07852700614854 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA790E001E078DE700614854 /* SlackReporter.swift */,
 				BA790DDC1E07878A00614854 /* Networking */,
 			);
 			name = Model;
@@ -133,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				BA790DD71E0786FC00614854 /* Worker */,
+				BA790DFB1E078D7800614854 /* View */,
 				BA790DDB1E07878500614854 /* Controller */,
 			);
 			name = Repo;
@@ -199,8 +231,8 @@
 		BA790DD31E0785A300614854 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				BA96388B1E07800300D16B73 /* Info.plist */,
 				BA790DD41E0785EA00614854 /* Constants.swift */,
+				BA96388B1E07800300D16B73 /* Info.plist */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -265,6 +297,77 @@
 				BA790DB21E07850500614854 /* Networking.swift */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		BA790DDE1E07897500614854 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DF41E078A5A00614854 /* Register */,
+				BA790DF11E078A2A00614854 /* Identifier */,
+				BA790DDF1E07897C00614854 /* Ability */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BA790DDF1E07897C00614854 /* Ability */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DE01E07898300614854 /* BaseAbility.swift */,
+			);
+			name = Ability;
+			sourceTree = "<group>";
+		};
+		BA790DE81E0789A400614854 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DE21E0789A200614854 /* BaseView.swift */,
+				BA790DE31E0789A200614854 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BA790DF11E078A2A00614854 /* Identifier */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DF21E078A3B00614854 /* Identifier.swift */,
+				BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */,
+				BA790DEC1E078A2800614854 /* UIView+Identifier.swift */,
+			);
+			name = Identifier;
+			sourceTree = "<group>";
+		};
+		BA790DF41E078A5A00614854 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DE91E078A2800614854 /* UICollectionView+Register.swift */,
+				BA790DEA1E078A2800614854 /* UITableView+Register.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		BA790DF71E078C2400614854 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DF81E078C2D00614854 /* Logger.swift */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		BA790DFA1E078C3100614854 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DF51E078C2100614854 /* ApplicationManager.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		BA790DFB1E078D7800614854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DFC1E078D8A00614854 /* RepoCell.swift */,
+				BA790DFD1E078D8A00614854 /* RepoCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		BA9638731E07800200D16B73 = {
@@ -407,6 +510,7 @@
 				BA96388A1E07800300D16B73 /* LaunchScreen.storyboard in Resources */,
 				BA9638871E07800300D16B73 /* Assets.xcassets in Resources */,
 				BA9638851E07800300D16B73 /* Main.storyboard in Resources */,
+				BA790DFF1E078D8A00614854 /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,20 +576,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA790DFE1E078D8A00614854 /* RepoCell.swift in Sources */,
+				BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */,
 				BA790DC31E07850500614854 /* RepoPresenter.swift in Sources */,
+				BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */,
 				BA790DC41E07850500614854 /* RepoState.swift in Sources */,
+				BA790DF31E078A3B00614854 /* Identifier.swift in Sources */,
 				BA790DBC1E07850500614854 /* MainAppState.swift in Sources */,
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
+				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,
 				BA790DD51E0785EA00614854 /* Constants.swift in Sources */,
 				BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */,
+				BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */,
+				BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */,
 				BA790DBE1E07850500614854 /* Networking.swift in Sources */,
+				BA790DE61E0789A200614854 /* BaseViewController.swift in Sources */,
 				BA790DBF1E07850500614854 /* RepoConfiguration.swift in Sources */,
 				BA790DC11E07850500614854 /* RepoInteractor.swift in Sources */,
 				BA790DBB1E07850500614854 /* FetchRepoWorker.swift in Sources */,
+				BA790DF01E078A2800614854 /* UIView+Identifier.swift in Sources */,
+				BA790E011E078DE700614854 /* SlackReporter.swift in Sources */,
 				BA790DBD1E07850500614854 /* MainReducer.swift in Sources */,
 				BA790DC21E07850500614854 /* RepoObj.swift in Sources */,
 				BA790DC51E07850500614854 /* UserObj.swift in Sources */,
 				BA790DC61E07850500614854 /* Worker.swift in Sources */,
+				BA790DE11E07898300614854 /* BaseAbility.swift in Sources */,
+				BA790DE51E0789A200614854 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D80B46C7853A3DFBAEE776CB /* Pods-iOS-Starter-Kit.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D54Y88Y9CY;
 				INFOPLIST_FILE = "iOS-Starter-Kit/Info.plist";
@@ -638,6 +755,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E96B171F5196F2B6D5464D93 /* Pods-iOS-Starter-Kit.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D54Y88Y9CY;
 				INFOPLIST_FILE = "iOS-Starter-Kit/Info.plist";
