@@ -64,5 +64,5 @@ It would be greatly appreciated when you make a pull-quest  🤗
 License
 ------------
 
-Titan is available under the MIT license. See the LICENSE file for more info.
+iOS Awesome Starter Kit is available under the MIT license. See the LICENSE file for more info.
 
