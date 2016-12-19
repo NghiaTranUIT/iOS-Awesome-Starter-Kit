@@ -12,14 +12,27 @@
   <a href="https://github.com/NghiaTranUIT/Responsive-Interaction-Control">Responsive Interaction Control</a>
 </p>
 
-Titan
+Awesome iOS Starter Kit
 ------------
-  
-The SMART PostgreSQL client for macOS/iOS. Clean design. Absolutely 100% Free and open-source.
+ 
+The starter kit is designed to help iOS develop can implement their app quickly and resolve common problem easily.
+It includes bunch of framework at top of technologies, inlcude new Clean Wwift Architecture. 
+Beside that, this project also use faimilar technologies from frontEnd, such as Promise, ReSwift,... help front-end guy approach easier.
   
 ![](https://img.shields.io/badge/Swift-3.0-blue.svg?style=flat)
 ![License](https://img.shields.io/npm/l/express.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-ios-green.svg?style=flat)
+
+
+What's inside
+------------
+
++ ReSwift
++ Clean Swift template
++ Promise Kit
++ Userful classes: Networking, BaseObj, Logger, ApplicationManager, Identifier, Registerable, BaseAbility, Worker, Slack Report,....
++ ...
+
 
 Reference
 ------------
