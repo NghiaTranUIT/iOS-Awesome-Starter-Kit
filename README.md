@@ -24,13 +24,13 @@ Beside that, this project also use faimilar technologies from frontEnd, such as 
 ![License](https://img.shields.io/npm/l/express.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-ios-green.svg?style=flat)
 
- <h3 align="center">
-    <img src="https://raw.githubusercontent.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/master/Screenshots/starter-kit.png" width="40%" />
-</h3>
-
 What's inside
 ------------
   
+<h3 align="center">
+    <img src="https://raw.githubusercontent.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/master/Screenshots/starter-kit.png" width="40%" />
+</h3>
+
 + ReSwift
 + Clean Swift template
 + Promise Kit
