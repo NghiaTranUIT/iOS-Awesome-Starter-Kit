@@ -155,7 +155,7 @@
 		BA790DC91E07851300614854 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BA790DCB1E07852B00614854 /* Repo */,
+				BA790DCB1E07852B00614854 /* Example - Repo */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		BA790DCB1E07852B00614854 /* Repo */ = {
+		BA790DCB1E07852B00614854 /* Example - Repo */ = {
 			isa = PBXGroup;
 			children = (
 				BA790E161E07A76700614854 /* DataSource */,
@@ -176,7 +176,7 @@
 				BA790DFB1E078D7800614854 /* View */,
 				BA790DDB1E07878500614854 /* Controller */,
 			);
-			name = Repo;
+			name = "Example - Repo";
 			sourceTree = "<group>";
 		};
 		BA790DCC1E07853900614854 /* Worker */ = {
@@ -459,9 +459,9 @@
 		BA96387E1E07800300D16B73 /* iOS-Starter-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				BA790DCE1E07858500614854 /* App Delegate */,
 				BA790DD31E0785A300614854 /* Configuration */,
 				BA790DCF1E07858A00614854 /* Resource */,
-				BA790DCE1E07858500614854 /* App Delegate */,
 				BA790DC81E07850E00614854 /* Shared */,
 				BA790DC71E07850700614854 /* Source Code */,
 			);
