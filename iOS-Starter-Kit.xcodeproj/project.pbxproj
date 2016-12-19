@@ -33,6 +33,11 @@
 		BA790DFE1E078D8A00614854 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DFC1E078D8A00614854 /* RepoCell.swift */; };
 		BA790DFF1E078D8A00614854 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA790DFD1E078D8A00614854 /* RepoCell.xib */; };
 		BA790E011E078DE700614854 /* SlackReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E001E078DE700614854 /* SlackReporter.swift */; };
+		BA790E031E079A2000614854 /* BaseObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E021E079A2000614854 /* BaseObj.swift */; };
+		BA790E081E079B9E00614854 /* FetchRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E051E079B9E00614854 /* FetchRepoRequest.swift */; };
+		BA790E091E079B9E00614854 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E061E079B9E00614854 /* QueueManager.swift */; };
+		BA790E0A1E079B9E00614854 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E071E079B9E00614854 /* Request.swift */; };
+		BA790E121E079C8300614854 /* Error+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E111E079C8300614854 /* Error+Default.swift */; };
 		BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96387F1E07800300D16B73 /* AppDelegate.swift */; };
 		BA9638851E07800300D16B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9638831E07800300D16B73 /* Main.storyboard */; };
 		BA9638871E07800300D16B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9638861E07800300D16B73 /* Assets.xcassets */; };
@@ -79,6 +84,11 @@
 		BA790DFC1E078D8A00614854 /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		BA790DFD1E078D8A00614854 /* RepoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
 		BA790E001E078DE700614854 /* SlackReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackReporter.swift; sourceTree = "<group>"; };
+		BA790E021E079A2000614854 /* BaseObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObj.swift; sourceTree = "<group>"; };
+		BA790E051E079B9E00614854 /* FetchRepoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRepoRequest.swift; sourceTree = "<group>"; };
+		BA790E061E079B9E00614854 /* QueueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
+		BA790E071E079B9E00614854 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BA790E111E079C8300614854 /* Error+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Default.swift"; sourceTree = "<group>"; };
 		BA96387C1E07800300D16B73 /* iOS-Starter-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Starter-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA96387F1E07800300D16B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA9638841E07800300D16B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,13 +142,10 @@
 		BA790DC81E07850E00614854 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BA790DFA1E078C3100614854 /* Application */,
-				BA790DF71E078C2400614854 /* Logger */,
+				BA790E0C1E079BB400614854 /* App */,
+				BA790E0B1E079BA700614854 /* Common */,
 				BA790DE81E0789A400614854 /* Base */,
 				BA790DDE1E07897500614854 /* Extensions */,
-				BA790DD81E07870E00614854 /* Obj Model */,
-				BA790DCD1E07853D00614854 /* Store */,
-				BA790DCC1E07853900614854 /* Worker */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -154,7 +161,6 @@
 		BA790DCA1E07852700614854 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BA790E001E078DE700614854 /* SlackReporter.swift */,
 				BA790DDC1E07878A00614854 /* Networking */,
 			);
 			name = Model;
@@ -257,6 +263,7 @@
 		BA790DD81E07870E00614854 /* Obj Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA790E021E079A2000614854 /* BaseObj.swift */,
 				BA790DB61E07850500614854 /* RepoObj.swift */,
 				BA790DB91E07850500614854 /* UserObj.swift */,
 			);
@@ -294,6 +301,8 @@
 		BA790DDC1E07878A00614854 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BA790E0E1E079BCE00614854 /* QueueManager */,
+				BA790E0D1E079BCA00614854 /* Request */,
 				BA790DB21E07850500614854 /* Networking.swift */,
 			);
 			name = Networking;
@@ -302,6 +311,7 @@
 		BA790DDE1E07897500614854 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BA790E101E079C7A00614854 /* Error */,
 				BA790DF41E078A5A00614854 /* Register */,
 				BA790DF11E078A2A00614854 /* Identifier */,
 				BA790DDF1E07897C00614854 /* Ability */,
@@ -348,6 +358,7 @@
 		BA790DF71E078C2400614854 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
+				BA790E001E078DE700614854 /* SlackReporter.swift */,
 				BA790DF81E078C2D00614854 /* Logger.swift */,
 			);
 			name = Logger;
@@ -368,6 +379,50 @@
 				BA790DFD1E078D8A00614854 /* RepoCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BA790E0B1E079BA700614854 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DFA1E078C3100614854 /* Application */,
+				BA790DF71E078C2400614854 /* Logger */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		BA790E0C1E079BB400614854 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA790DD81E07870E00614854 /* Obj Model */,
+				BA790DCD1E07853D00614854 /* Store */,
+				BA790DCC1E07853900614854 /* Worker */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		BA790E0D1E079BCA00614854 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				BA790E051E079B9E00614854 /* FetchRepoRequest.swift */,
+				BA790E071E079B9E00614854 /* Request.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		BA790E0E1E079BCE00614854 /* QueueManager */ = {
+			isa = PBXGroup;
+			children = (
+				BA790E061E079B9E00614854 /* QueueManager.swift */,
+			);
+			name = QueueManager;
+			sourceTree = "<group>";
+		};
+		BA790E101E079C7A00614854 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				BA790E111E079C8300614854 /* Error+Default.swift */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 		BA9638731E07800200D16B73 = {
@@ -578,10 +633,12 @@
 			files = (
 				BA790DFE1E078D8A00614854 /* RepoCell.swift in Sources */,
 				BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */,
+				BA790E031E079A2000614854 /* BaseObj.swift in Sources */,
 				BA790DC31E07850500614854 /* RepoPresenter.swift in Sources */,
 				BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */,
 				BA790DC41E07850500614854 /* RepoState.swift in Sources */,
 				BA790DF31E078A3B00614854 /* Identifier.swift in Sources */,
+				BA790E0A1E079B9E00614854 /* Request.swift in Sources */,
 				BA790DBC1E07850500614854 /* MainAppState.swift in Sources */,
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
 				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,
@@ -589,15 +646,18 @@
 				BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */,
 				BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */,
 				BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */,
+				BA790E121E079C8300614854 /* Error+Default.swift in Sources */,
 				BA790DBE1E07850500614854 /* Networking.swift in Sources */,
 				BA790DE61E0789A200614854 /* BaseViewController.swift in Sources */,
 				BA790DBF1E07850500614854 /* RepoConfiguration.swift in Sources */,
 				BA790DC11E07850500614854 /* RepoInteractor.swift in Sources */,
+				BA790E081E079B9E00614854 /* FetchRepoRequest.swift in Sources */,
 				BA790DBB1E07850500614854 /* FetchRepoWorker.swift in Sources */,
 				BA790DF01E078A2800614854 /* UIView+Identifier.swift in Sources */,
 				BA790E011E078DE700614854 /* SlackReporter.swift in Sources */,
 				BA790DBD1E07850500614854 /* MainReducer.swift in Sources */,
 				BA790DC21E07850500614854 /* RepoObj.swift in Sources */,
+				BA790E091E079B9E00614854 /* QueueManager.swift in Sources */,
 				BA790DC51E07850500614854 /* UserObj.swift in Sources */,
 				BA790DC61E07850500614854 /* Worker.swift in Sources */,
 				BA790DE11E07898300614854 /* BaseAbility.swift in Sources */,

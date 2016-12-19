@@ -9,22 +9,19 @@
 import Foundation
 import ObjectMapper
 
-class RepoObj: Mappable {
+
+class RepoObj: BaseObj {
+    
     
     //
     // MARK: - Variable
     var name: String?
-    var createdAt: Date?
     
-    //
-    // MARK: - Mapping
-    required init?(map: Map) {
-        
-    }
     
     // Mappable
-    func mapping(map: Map) {
-        name         <- map["name"]
-        createdAt    <- (map["createdAt"], DateTransform())
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        
+        name <- map[Constants.Obj.Repo.Name]
     }
 }

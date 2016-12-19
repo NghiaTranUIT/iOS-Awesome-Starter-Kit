@@ -31,32 +31,9 @@ class Networking {
     /// Fetch Repo
     func fetchRepoWithText(text: String) -> Promise<[RepoObj]> {
         
-        return Promise { fulfill, reject in
-    
-
-            // Query
-            Alamofire.request(url)
-                .validate()
-                .responseJSON { (response) in
-                    
-                    let result = response.result
-                    
-                    switch result {
-                    case .success(let value):
-                        
-                        // Parse
-                        let repoObjs = Mapper<RepoObj>().mapArray(JSONObject: value) ?? []
-                        
-                        // Full fill
-                        fulfill(repoObjs)
-                        
-                    case .failure(let error):
-                        
-                        // Reject
-                        reject(error)
-                    }
-            }
-        }
+        // Repo request
+        let repoRequest = FetchRepoRequest(param: ["q": text])
+        return repoRequest.toPromise()
     }
 
 }

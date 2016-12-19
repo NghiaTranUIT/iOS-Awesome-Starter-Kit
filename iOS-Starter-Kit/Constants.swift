@@ -62,11 +62,11 @@ struct Constants {
         
         #if DEBUG // -> Development
 
-            static let BaseFeelsAPIURL = "your.base.endpoint.development"
+            static let BaseAPIURL = "your.base.endpoint.development"
 
         #else // -> Production
         
-            static let BaseFeelsAPIURL = "your.base.endpoint.production"
+            static let BaseAPIURL = "your.base.endpoint.production"
         
         #endif
     
@@ -77,7 +77,7 @@ struct Constants {
     // MARK: Feels
     struct APIEndPoint {
         
-        static let RepoList = ""
+        static let RepoList = "/search/repositories"
         
     }
     
@@ -107,6 +107,13 @@ struct Constants {
             static let Name = "name"
             static let Username = "username"
             static let Email = "email"
+        }
+        
+        
+        // MARK:
+        // MARK: Repo
+        struct Repo {
+            static let Name = "name"
         }
     }
     
