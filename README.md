@@ -1,6 +1,6 @@
 
 <h3 align="center">
-    <img src="https://raw.githubusercontent.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/master/Screenshots/github_logo.png" width="50%" />
+    <img src="https://raw.githubusercontent.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/master/Screenshots/github_logo.jpg" width="50%" />
 </h3>
   
 <p align="center">
