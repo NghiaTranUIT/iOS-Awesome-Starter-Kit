@@ -23,7 +23,7 @@ protocol RepoControllerOutput {
 protocol RepoControllerDataSource: class {
     
     // Repo
-    func repoDataSource() -> UITableViewDataSource
+    func dataSource() -> UITableViewDataSource
 }
 
 //
@@ -35,7 +35,7 @@ class RepoController: UIViewController {
     // MARK: - Output
     var output: RepoControllerOutput?
     weak var input: RepoPresenterOutput?
-    weak var dataSource: RepoControllerDataSource!
+    weak var dataSource: RepoControllerDataSource?
     
     
     //
@@ -49,6 +49,12 @@ class RepoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup Clean
+        RepoConfiguration.shared.configure(viewController: self)
+        
+        // Init
+        self.initBaseAbility()
+        
         // Fetch
         self.output?.fetchList()
     }
@@ -60,7 +66,7 @@ class RepoController: UIViewController {
     
     override func initUIs() {
         self.tableView.registerCell(RepoCell.self)
-        self.tableView.dataSource = self.dataSource.repoDataSource()
+        self.tableView.dataSource = self.dataSource?.dataSource()
     }
 }
 
@@ -73,7 +79,7 @@ extension RepoController: RepoPresenterOutput {
     }
     
     
-    func reloadData(repos: [RepoObj]) {
+    func reloadTableView() {
         self.tableView.reloadData()
     }
 }

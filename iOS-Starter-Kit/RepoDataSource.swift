@@ -11,12 +11,36 @@ import UIKit
 import RxSwift
 
 
+protocol RepoDataSourceDelegate: class {
+    
+    // Reload
+    func reloadTableView()
+}
+
 class RepoDataSource: NSObject {
     
+    //
+    // MARK: - Variable
+    weak var delegate: RepoDataSourceDelegate?
+    private let disposeBag = DisposeBag()
     fileprivate var repos: Variable<[RepoObj]> {
         return mainStore.state.repoState!.repos
     }
     
+    
+    //
+    // MARK: - Init
+    override init() {
+        super.init()
+        
+        // Obser
+        self.repos.asObservable().subscribe {[unowned self] (repo) in
+            
+            // Reload
+            self.delegate?.reloadTableView()
+            
+        }.addDisposableTo(self.disposeBag)
+    }
 }
 
 //

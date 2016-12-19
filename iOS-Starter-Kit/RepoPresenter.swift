@@ -16,17 +16,17 @@ protocol RepoPresenterOutput: class {
     
     
     /// Reload data
-    func reloadData(repos: [RepoObj])
+    func reloadTableView()
 }
 
 class RepoPresenter {
-
     
-    //
-    // MARK: - Variable
-    fileprivate var repos: Variable<[RepoObj]> {
-        return mainStore.state.repoState!.repos
-    }
+    /// Data Source
+    fileprivate lazy var repoDataSource: RepoDataSource = {
+        let repo = RepoDataSource()
+        repo.delegate = self
+        return repo
+    }()
     
     
     /// Output
@@ -45,7 +45,17 @@ extension RepoPresenter: RepoInteractorOutput {
 // MARK: - Data Source
 extension RepoPresenter: RepoControllerDataSource {
     
-    func repoDataSource() -> UITableViewDataSource {
-        return RepoDataSource()
+    func dataSource() -> UITableViewDataSource {
+        return self.repoDataSource
+    }
+}
+
+
+//
+// MARK: - Delegate
+extension RepoPresenter: RepoDataSourceDelegate {
+    
+    func reloadTableView() {
+        self.output?.reloadTableView()
     }
 }

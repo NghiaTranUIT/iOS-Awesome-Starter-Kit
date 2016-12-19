@@ -66,7 +66,7 @@ extension Request {
     // Param
     var param: Parameters? {
         get { return nil }
-        set { param = newValue }
+        set {  }
     }
     
     
