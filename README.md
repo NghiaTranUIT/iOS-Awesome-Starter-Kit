@@ -16,17 +16,20 @@
 Awesome iOS Starter Kit
 ------------
  
-The starter kit is designed to help iOS develop can implement their app quickly and resolve common problem easily.
-It includes bunch of framework at top of technologies, inlcude new Clean Wwift Architecture. 
+The starter kit is designed to help iOS develop can implement their app quickly and resolve common problem easily.  
+It includes bunch of framework at top of technologies, inlcude new Clean Wwift Architecture.   
 Beside that, this project also use faimilar technologies from frontEnd, such as Promise, ReSwift,... help front-end guy approach easier.
   
 ![](https://img.shields.io/badge/Swift-3.0-blue.svg?style=flat)
 ![License](https://img.shields.io/npm/l/express.svg?style=flat)
 ![Platform](https://img.shields.io/badge/platform-ios-green.svg?style=flat)
 
-
 What's inside
 ------------
+  
+<h3 align="center">
+    <img src="https://raw.githubusercontent.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/master/Screenshots/starter-kit.png" width="40%" />
+</h3>
 
 + ReSwift
 + Clean Swift template
@@ -36,7 +39,7 @@ What's inside
 
 Presentation at Swift Vietnam
 ------------
-[Slide](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
+[Keynote](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
 [Video Facebook](https://www.facebook.com/swift.org.vn/videos/537074413148880/) 🔴 59:00
 
 Reference
@@ -56,7 +59,7 @@ vinhnghiatran@gmail.com
 Contributor
 ------------
 
-It would be greatly appreciated  when you make a pull-quest  🤗
+It would be greatly appreciated when you make a pull-quest  🤗
 
 License
 ------------
