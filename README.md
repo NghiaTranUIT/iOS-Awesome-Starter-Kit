@@ -6,7 +6,7 @@
 <p align="center">
   <a href="http://nghiatran.me">Mad lab</a> &bull;
   <a href="https://github.com/NghiaTranUIT/Titan-Postgresql">TITAN</a> &bull;
-  <a href="https://github.com/NghiaTranUIT/FeSpinner">FeSpinner</a> &bull;
+  <a href="https://github.com/NghiaTranUIT/FeSpinner">FeSpinner</a>
   <br> &nbsp;
   <b>iOS Awesome Starter Kit</b> &bull;
   <a href="https://github.com/NghiaTranUIT/FeSlideFilter">FeSlideFilter</a> &bull;
@@ -37,10 +37,25 @@ What's inside
 + Userful classes: Networking, BaseObj, Logger, ApplicationManager, Identifier, Registerable, BaseAbility, Worker, Slack Report,....
 + ...
 
+Roadmap
+------------
+
+- [x] Base Foundation
+- [x] Clean Swift Example
+- [x] Networking + Request Protocol
+- [x] Worker Protocol
+- [x] Object Mapping
+- [ ] Caching Manager 
+- [ ] Authentication
+- [ ] Realm Driver
+- [ ] Router
+- [ ] Transition Manager
+- [ ] Test 
+
 Presentation at Swift Vietnam
 ------------
-[Keynote](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
-[Video Facebook](https://www.facebook.com/swift.org.vn/videos/537074413148880/) 🔴 59:00
+✏️[Keynote](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
+✏️[Video Facebook](https://www.facebook.com/swift.org.vn/videos/537074413148880/) 🔴 59:00
 
 Reference
 ------------
