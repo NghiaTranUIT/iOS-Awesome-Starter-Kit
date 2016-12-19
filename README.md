@@ -5,8 +5,9 @@
   
 <p align="center">
   <a href="http://nghiatran.me">Mad lab</a> &bull;
-  <a href="https://github.com/NghiaTranUIT/FeSpinner">FeSpinner</a> &bull;
   <a href="https://github.com/NghiaTranUIT/Titan-Postgresql">TITAN</a> &bull;
+  <a href="https://github.com/NghiaTranUIT/FeSpinner">FeSpinner</a> &bull;
+  <br> &nbsp;
   <b>iOS Awesome Starter Kit</b> &bull;
   <a href="https://github.com/NghiaTranUIT/FeSlideFilter">FeSlideFilter</a> &bull;
   <a href="https://github.com/NghiaTranUIT/Responsive-Interaction-Control">Responsive Interaction Control</a>
@@ -33,6 +34,10 @@ What's inside
 + Userful classes: Networking, BaseObj, Logger, ApplicationManager, Identifier, Registerable, BaseAbility, Worker, Slack Report,....
 + ...
 
+Presentation at Swift Vietnam
+------------
+[Slide](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
+[Video Facebook](https://www.facebook.com/swift.org.vn/videos/537074413148880/) 🔴 59:00
 
 Reference
 ------------
