@@ -54,13 +54,17 @@ Roadmap
 
 Presentation at Swift Vietnam
 ------------
-✏️[Keynote](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
+✏️[Keynote](https://github.com/NghiaTranUIT/iOS-Awesome-Starter-Kit/blob/master/Swift%20Vietnam%20Presentation/MobileMeetup.key)  
 ✏️[Video Facebook](https://www.facebook.com/swift.org.vn/videos/537074413148880/) 🔴 59:00
 
 Reference
 ------------
 1. http://blog.benjamin-encz.de/post/real-world-flux-ios/
 2. http://clean-swift.com/clean-swift-ios-architecture/
+
+Question 🤔
+------------
+If you have any problem, feels free to shot me an message in `ios-starter-kit` group at [SwiftVietnam](http://chat.swift.org.vn)
 
 Contact
 ------------
