@@ -141,18 +141,20 @@
 				BA790DC91E07851300614854 /* Scenes */,
 			);
 			name = "Source Code";
+			path = "Source Code";
 			sourceTree = "<group>";
 		};
 		BA790DC81E07850E00614854 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BA7D8D7A1E0A701500C406D5 /* Router */,
 				BA790E0C1E079BB400614854 /* App */,
-				BA790E0B1E079BA700614854 /* Common */,
 				BA790DE81E0789A400614854 /* Base */,
+				BA790E0B1E079BA700614854 /* Common */,
 				BA790DDE1E07897500614854 /* Extensions */,
+				BA7D8D7A1E0A701500C406D5 /* Router */,
 			);
 			name = Shared;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		BA790DC91E07851300614854 /* Scenes */ = {
@@ -161,6 +163,7 @@
 				BA790DCB1E07852B00614854 /* Example - Repo */,
 			);
 			name = Scenes;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		BA790DCA1E07852700614854 /* Model */ = {
@@ -169,17 +172,19 @@
 				BA790DDC1E07878A00614854 /* Networking */,
 			);
 			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BA790DCB1E07852B00614854 /* Example - Repo */ = {
 			isa = PBXGroup;
 			children = (
-				BA790E161E07A76700614854 /* DataSource */,
-				BA790DD71E0786FC00614854 /* Worker */,
-				BA790DFB1E078D7800614854 /* View */,
 				BA790DDB1E07878500614854 /* Controller */,
+				BA790E161E07A76700614854 /* DataSource */,
+				BA790DFB1E078D7800614854 /* View */,
+				BA790DD71E0786FC00614854 /* Worker */,
 			);
 			name = "Example - Repo";
+			path = "Example - Repo";
 			sourceTree = "<group>";
 		};
 		BA790DCC1E07853900614854 /* Worker */ = {
@@ -188,15 +193,17 @@
 				BA790DBA1E07850500614854 /* Worker.swift */,
 			);
 			name = Worker;
+			path = Worker;
 			sourceTree = "<group>";
 		};
 		BA790DCD1E07853D00614854 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				BA790DDA1E07875D00614854 /* State */,
 				BA790DD91E07875800614854 /* Reducer */,
+				BA790DDA1E07875D00614854 /* State */,
 			);
 			name = Store;
+			path = Store;
 			sourceTree = "<group>";
 		};
 		BA790DCE1E07858500614854 /* App Delegate */ = {
@@ -205,17 +212,19 @@
 				BA96387F1E07800300D16B73 /* AppDelegate.swift */,
 			);
 			name = "App Delegate";
+			path = "App Delegate";
 			sourceTree = "<group>";
 		};
 		BA790DCF1E07858A00614854 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				BA790DD61E0786EB00614854 /* Storyboards */,
-				BA790DD21E07859B00614854 /* Github */,
-				BA790DD11E07859700614854 /* Xibs */,
 				BA790DD01E07859200614854 /* Assets */,
+				BA790DD21E07859B00614854 /* Github */,
+				BA790DD61E0786EB00614854 /* Storyboards */,
+				BA790DD11E07859700614854 /* Xibs */,
 			);
 			name = Resource;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BA790DD01E07859200614854 /* Assets */ = {
@@ -224,6 +233,7 @@
 				BA9638861E07800300D16B73 /* Assets.xcassets */,
 			);
 			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		BA790DD11E07859700614854 /* Xibs */ = {
@@ -231,6 +241,7 @@
 			children = (
 			);
 			name = Xibs;
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		BA790DD21E07859B00614854 /* Github */ = {
@@ -238,6 +249,7 @@
 			children = (
 			);
 			name = Github;
+			path = Github;
 			sourceTree = "<group>";
 		};
 		BA790DD31E0785A300614854 /* Configuration */ = {
@@ -247,6 +259,7 @@
 				BA96388B1E07800300D16B73 /* Info.plist */,
 			);
 			name = Configuration;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		BA790DD61E0786EB00614854 /* Storyboards */ = {
@@ -256,6 +269,7 @@
 				BA9638831E07800300D16B73 /* Main.storyboard */,
 			);
 			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		BA790DD71E0786FC00614854 /* Worker */ = {
@@ -264,6 +278,7 @@
 				BA790DAF1E07850500614854 /* FetchRepoWorker.swift */,
 			);
 			name = Worker;
+			path = Worker;
 			sourceTree = "<group>";
 		};
 		BA790DD81E07870E00614854 /* Obj Model */ = {
@@ -274,6 +289,7 @@
 				BA790DB91E07850500614854 /* UserObj.swift */,
 			);
 			name = "Obj Model";
+			path = "Obj Model";
 			sourceTree = "<group>";
 		};
 		BA790DD91E07875800614854 /* Reducer */ = {
@@ -282,6 +298,7 @@
 				BA790DB11E07850500614854 /* MainReducer.swift */,
 			);
 			name = Reducer;
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 		BA790DDA1E07875D00614854 /* State */ = {
@@ -291,17 +308,19 @@
 				BA790DB81E07850500614854 /* RepoState.swift */,
 			);
 			name = State;
+			path = State;
 			sourceTree = "<group>";
 		};
 		BA790DDB1E07878500614854 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BA790DB31E07850500614854 /* RepoConfiguration.swift */,
 				BA790DB41E07850500614854 /* RepoController.swift */,
 				BA790DB51E07850500614854 /* RepoInteractor.swift */,
 				BA790DB71E07850500614854 /* RepoPresenter.swift */,
-				BA790DB31E07850500614854 /* RepoConfiguration.swift */,
 			);
 			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		BA790DDC1E07878A00614854 /* Networking */ = {
@@ -312,17 +331,19 @@
 				BA790DB21E07850500614854 /* Networking.swift */,
 			);
 			name = Networking;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		BA790DDE1E07897500614854 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BA790E101E079C7A00614854 /* Error */,
-				BA790DF41E078A5A00614854 /* Register */,
-				BA790DF11E078A2A00614854 /* Identifier */,
 				BA790DDF1E07897C00614854 /* Ability */,
+				BA790E101E079C7A00614854 /* Error */,
+				BA790DF11E078A2A00614854 /* Identifier */,
+				BA790DF41E078A5A00614854 /* Register */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BA790DDF1E07897C00614854 /* Ability */ = {
@@ -331,6 +352,7 @@
 				BA790DE01E07898300614854 /* BaseAbility.swift */,
 			);
 			name = Ability;
+			path = Ability;
 			sourceTree = "<group>";
 		};
 		BA790DE81E0789A400614854 /* Base */ = {
@@ -340,16 +362,18 @@
 				BA790DE31E0789A200614854 /* BaseViewController.swift */,
 			);
 			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		BA790DF11E078A2A00614854 /* Identifier */ = {
 			isa = PBXGroup;
 			children = (
 				BA790DF21E078A3B00614854 /* Identifier.swift */,
-				BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */,
 				BA790DEC1E078A2800614854 /* UIView+Identifier.swift */,
+				BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */,
 			);
 			name = Identifier;
+			path = Identifier;
 			sourceTree = "<group>";
 		};
 		BA790DF41E078A5A00614854 /* Register */ = {
@@ -359,15 +383,17 @@
 				BA790DEA1E078A2800614854 /* UITableView+Register.swift */,
 			);
 			name = Register;
+			path = Register;
 			sourceTree = "<group>";
 		};
 		BA790DF71E078C2400614854 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
-				BA790E001E078DE700614854 /* SlackReporter.swift */,
 				BA790DF81E078C2D00614854 /* Logger.swift */,
+				BA790E001E078DE700614854 /* SlackReporter.swift */,
 			);
 			name = Logger;
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		BA790DFA1E078C3100614854 /* Application */ = {
@@ -376,6 +402,7 @@
 				BA790DF51E078C2100614854 /* ApplicationManager.swift */,
 			);
 			name = Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		BA790DFB1E078D7800614854 /* View */ = {
@@ -385,6 +412,7 @@
 				BA790DFD1E078D8A00614854 /* RepoCell.xib */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		BA790E0B1E079BA700614854 /* Common */ = {
@@ -394,6 +422,7 @@
 				BA790DF71E078C2400614854 /* Logger */,
 			);
 			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		BA790E0C1E079BB400614854 /* App */ = {
@@ -404,6 +433,7 @@
 				BA790DCC1E07853900614854 /* Worker */,
 			);
 			name = App;
+			path = App;
 			sourceTree = "<group>";
 		};
 		BA790E0D1E079BCA00614854 /* Request */ = {
@@ -413,6 +443,7 @@
 				BA790E071E079B9E00614854 /* Request.swift */,
 			);
 			name = Request;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		BA790E0E1E079BCE00614854 /* QueueManager */ = {
@@ -421,6 +452,7 @@
 				BA790E061E079B9E00614854 /* QueueManager.swift */,
 			);
 			name = QueueManager;
+			path = QueueManager;
 			sourceTree = "<group>";
 		};
 		BA790E101E079C7A00614854 /* Error */ = {
@@ -429,6 +461,7 @@
 				BA790E111E079C8300614854 /* Error+Default.swift */,
 			);
 			name = Error;
+			path = Error;
 			sourceTree = "<group>";
 		};
 		BA790E161E07A76700614854 /* DataSource */ = {
@@ -437,6 +470,7 @@
 				BA790E171E07A77100614854 /* RepoDataSource.swift */,
 			);
 			name = DataSource;
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		BA7D8D7A1E0A701500C406D5 /* Router */ = {
@@ -445,16 +479,17 @@
 				BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */,
 			);
 			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		BA9638731E07800200D16B73 = {
 			isa = PBXGroup;
 			children = (
+				BBCC903DEA265B33612565ED /* Frameworks */,
+				09EB263E98AF3585C67B94C1 /* Pods */,
+				BA96387D1E07800300D16B73 /* Products */,
 				BA96387E1E07800300D16B73 /* iOS-Starter-Kit */,
 				BA9638931E07800300D16B73 /* iOS-Starter-KitTests */,
-				BA96387D1E07800300D16B73 /* Products */,
-				09EB263E98AF3585C67B94C1 /* Pods */,
-				BBCC903DEA265B33612565ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -482,8 +517,8 @@
 		BA9638931E07800300D16B73 /* iOS-Starter-KitTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA9638941E07800300D16B73 /* iOS_Starter_KitTests.swift */,
 				BA9638961E07800300D16B73 /* Info.plist */,
+				BA9638941E07800300D16B73 /* iOS_Starter_KitTests.swift */,
 			);
 			path = "iOS-Starter-KitTests";
 			sourceTree = "<group>";
@@ -714,6 +749,7 @@
 				BA9638841E07800300D16B73 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		BA9638881E07800300D16B73 /* LaunchScreen.storyboard */ = {
@@ -722,6 +758,7 @@
 				BA9638891E07800300D16B73 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -827,7 +864,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D54Y88Y9CY;
-				INFOPLIST_FILE = "iOS-Starter-Kit/Info.plist";
+				INFOPLIST_FILE = "iOS-Starter-Kit/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.nghiatran.iOS-Starter-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,7 +879,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D54Y88Y9CY;
-				INFOPLIST_FILE = "iOS-Starter-Kit/Info.plist";
+				INFOPLIST_FILE = "iOS-Starter-Kit/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.nghiatran.iOS-Starter-Kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
