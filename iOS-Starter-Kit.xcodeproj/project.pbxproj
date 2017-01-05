@@ -36,7 +36,7 @@
 		BA790E031E079A2000614854 /* BaseObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E021E079A2000614854 /* BaseObj.swift */; };
 		BA790E081E079B9E00614854 /* FetchRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E051E079B9E00614854 /* FetchRepoRequest.swift */; };
 		BA790E091E079B9E00614854 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E061E079B9E00614854 /* QueueManager.swift */; };
-		BA790E0A1E079B9E00614854 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E071E079B9E00614854 /* Request.swift */; };
+		BA790E0A1E079B9E00614854 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E071E079B9E00614854 /* Requestable.swift */; };
 		BA790E121E079C8300614854 /* Error+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E111E079C8300614854 /* Error+Default.swift */; };
 		BA790E181E07A77100614854 /* RepoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E171E07A77100614854 /* RepoDataSource.swift */; };
 		BA7D8D7C1E0A702100C406D5 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */; };
@@ -89,7 +89,7 @@
 		BA790E021E079A2000614854 /* BaseObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObj.swift; sourceTree = "<group>"; };
 		BA790E051E079B9E00614854 /* FetchRepoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRepoRequest.swift; sourceTree = "<group>"; };
 		BA790E061E079B9E00614854 /* QueueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
-		BA790E071E079B9E00614854 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Request/Request.swift; sourceTree = "<group>"; };
+		BA790E071E079B9E00614854 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Request/Requestable.swift; sourceTree = "<group>"; };
 		BA790E111E079C8300614854 /* Error+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Default.swift"; sourceTree = "<group>"; };
 		BA790E171E07A77100614854 /* RepoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDataSource.swift; sourceTree = "<group>"; };
 		BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 				BA790E0E1E079BCE00614854 /* QueueManager */,
 				BA790E0D1E079BCA00614854 /* Request */,
 				BA790DB21E07850500614854 /* Networking.swift */,
-				BA790E071E079B9E00614854 /* Request.swift */,
+				BA790E071E079B9E00614854 /* Requestable.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -661,7 +661,7 @@
 				BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */,
 				BA790DC41E07850500614854 /* RepoState.swift in Sources */,
 				BA790DF31E078A3B00614854 /* Identifier.swift in Sources */,
-				BA790E0A1E079B9E00614854 /* Request.swift in Sources */,
+				BA790E0A1E079B9E00614854 /* Requestable.swift in Sources */,
 				BA790DBC1E07850500614854 /* MainAppState.swift in Sources */,
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
 				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,

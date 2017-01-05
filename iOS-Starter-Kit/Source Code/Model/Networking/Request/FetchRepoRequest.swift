@@ -1,5 +1,5 @@
 //
-//  GetListConnectionRequest.swift
+//  FetchRepoRequest.swift
 //  Titan
 //
 //  Created by Nghia Tran on 10/12/16.
@@ -10,7 +10,7 @@ import Alamofire
 import ObjectMapper
 
 
-struct FetchRepoRequest: Request {
+struct FetchRepoRequest: Requestable {
     
     typealias T = [RepoObj]
     
