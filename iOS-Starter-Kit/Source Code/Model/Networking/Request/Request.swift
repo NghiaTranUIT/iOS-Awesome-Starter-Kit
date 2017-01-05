@@ -24,7 +24,7 @@ protocol Request: Action, URLRequestConvertible {
     
     var httpMethod: HTTPMethod {get}
     
-    var param: Parameters? {get set}
+    var param: Parameters? {get}
     
     var addionalHeader: HeaderParameter? {get}
     
@@ -34,7 +34,7 @@ protocol Request: Action, URLRequestConvertible {
     
     func decode(data: Any) -> T
     
-    init()
+    init(param: Parameters?)
 }
 
 
@@ -66,7 +66,6 @@ extension Request {
     // Param
     var param: Parameters? {
         get { return nil }
-        set {  }
     }
     
     
@@ -135,14 +134,6 @@ extension Request {
                 })
         }
     }
-    
-    
-    // Init
-    init(param: Parameters?) {
-        self.init()
-        self.param = param
-    }
-    
     
     // Build URL Request
     func buildURLRequest() -> URLRequest {

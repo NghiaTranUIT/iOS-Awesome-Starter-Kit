@@ -10,16 +10,11 @@ import Alamofire
 import ObjectMapper
 
 
-class FetchRepoRequest {
-    required init() {}
-}
-
-
-//
-// MARK: - Network
-extension FetchRepoRequest: Request {
+struct FetchRepoRequest: Request {
     
     typealias T = [RepoObj]
+    
+    var param: Parameters?
     
     var httpMethod: HTTPMethod {
         get { return .get }
@@ -36,5 +31,9 @@ extension FetchRepoRequest: Request {
     func decode(data: Any) -> Array<RepoObj> {
         return Mapper<RepoObj>().mapArray(JSONObject: data) ?? []
     }
+    
+    // Init
+    init(param: Parameters?) {
+        self.param = param
+    }
 }
-
