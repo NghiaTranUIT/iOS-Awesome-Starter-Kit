@@ -80,8 +80,12 @@ Contributor
 
 It would be greatly appreciated when you make a pull-quest  🤗
 
+
 License
 ------------
+* [Clean Swift](http://clean-swift.com) by *Raymond Law*
+* [ReSwift](https://github.com/ReSwift/ReSwift) by @benjaminencz and his team.
+* [PromiseKit](https://github.com/mxcl/PromiseKit) by @mxcl
 
 iOS Awesome Starter Kit is available under the MIT license. See the LICENSE file for more info.
 
