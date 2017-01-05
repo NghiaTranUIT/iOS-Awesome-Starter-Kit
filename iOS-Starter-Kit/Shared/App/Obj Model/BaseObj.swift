@@ -38,7 +38,6 @@ class BaseObj: Mappable {
         self.createdAt <- (map[Constants.Obj.CreatedAt], APIDateTransform())
         self.updatedAt <- (map[Constants.Obj.UpdatedAt], APIDateTransform())
     }
-    
 }
 
 

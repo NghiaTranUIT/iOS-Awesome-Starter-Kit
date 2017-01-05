@@ -36,7 +36,7 @@
 		BA790E031E079A2000614854 /* BaseObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E021E079A2000614854 /* BaseObj.swift */; };
 		BA790E081E079B9E00614854 /* FetchRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E051E079B9E00614854 /* FetchRepoRequest.swift */; };
 		BA790E091E079B9E00614854 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E061E079B9E00614854 /* QueueManager.swift */; };
-		BA790E0A1E079B9E00614854 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E071E079B9E00614854 /* Request.swift */; };
+		BA790E0A1E079B9E00614854 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E071E079B9E00614854 /* Requestable.swift */; };
 		BA790E121E079C8300614854 /* Error+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E111E079C8300614854 /* Error+Default.swift */; };
 		BA790E181E07A77100614854 /* RepoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790E171E07A77100614854 /* RepoDataSource.swift */; };
 		BA7D8D7C1E0A702100C406D5 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */; };
@@ -89,7 +89,7 @@
 		BA790E021E079A2000614854 /* BaseObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObj.swift; sourceTree = "<group>"; };
 		BA790E051E079B9E00614854 /* FetchRepoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRepoRequest.swift; sourceTree = "<group>"; };
 		BA790E061E079B9E00614854 /* QueueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
-		BA790E071E079B9E00614854 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BA790E071E079B9E00614854 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Request/Requestable.swift; sourceTree = "<group>"; };
 		BA790E111E079C8300614854 /* Error+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Default.swift"; sourceTree = "<group>"; };
 		BA790E171E07A77100614854 /* RepoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDataSource.swift; sourceTree = "<group>"; };
 		BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
@@ -140,7 +140,6 @@
 				BA790DCA1E07852700614854 /* Model */,
 				BA790DC91E07851300614854 /* Scenes */,
 			);
-			name = "Source Code";
 			path = "Source Code";
 			sourceTree = "<group>";
 		};
@@ -153,7 +152,6 @@
 				BA790DDE1E07897500614854 /* Extensions */,
 				BA7D8D7A1E0A701500C406D5 /* Router */,
 			);
-			name = Shared;
 			path = Shared;
 			sourceTree = "<group>";
 		};
@@ -162,7 +160,6 @@
 			children = (
 				BA790DCB1E07852B00614854 /* Example - Repo */,
 			);
-			name = Scenes;
 			path = Scenes;
 			sourceTree = "<group>";
 		};
@@ -171,7 +168,6 @@
 			children = (
 				BA790DDC1E07878A00614854 /* Networking */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -183,7 +179,6 @@
 				BA790DFB1E078D7800614854 /* View */,
 				BA790DD71E0786FC00614854 /* Worker */,
 			);
-			name = "Example - Repo";
 			path = "Example - Repo";
 			sourceTree = "<group>";
 		};
@@ -192,7 +187,6 @@
 			children = (
 				BA790DBA1E07850500614854 /* Worker.swift */,
 			);
-			name = Worker;
 			path = Worker;
 			sourceTree = "<group>";
 		};
@@ -202,7 +196,6 @@
 				BA790DD91E07875800614854 /* Reducer */,
 				BA790DDA1E07875D00614854 /* State */,
 			);
-			name = Store;
 			path = Store;
 			sourceTree = "<group>";
 		};
@@ -211,7 +204,6 @@
 			children = (
 				BA96387F1E07800300D16B73 /* AppDelegate.swift */,
 			);
-			name = "App Delegate";
 			path = "App Delegate";
 			sourceTree = "<group>";
 		};
@@ -223,7 +215,6 @@
 				BA790DD61E0786EB00614854 /* Storyboards */,
 				BA790DD11E07859700614854 /* Xibs */,
 			);
-			name = Resource;
 			path = Resource;
 			sourceTree = "<group>";
 		};
@@ -232,7 +223,6 @@
 			children = (
 				BA9638861E07800300D16B73 /* Assets.xcassets */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -240,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Xibs;
 			path = Xibs;
 			sourceTree = "<group>";
 		};
@@ -248,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Github;
 			path = Github;
 			sourceTree = "<group>";
 		};
@@ -258,7 +246,6 @@
 				BA790DD41E0785EA00614854 /* Constants.swift */,
 				BA96388B1E07800300D16B73 /* Info.plist */,
 			);
-			name = Configuration;
 			path = Configuration;
 			sourceTree = "<group>";
 		};
@@ -268,7 +255,6 @@
 				BA9638881E07800300D16B73 /* LaunchScreen.storyboard */,
 				BA9638831E07800300D16B73 /* Main.storyboard */,
 			);
-			name = Storyboards;
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
@@ -277,7 +263,6 @@
 			children = (
 				BA790DAF1E07850500614854 /* FetchRepoWorker.swift */,
 			);
-			name = Worker;
 			path = Worker;
 			sourceTree = "<group>";
 		};
@@ -288,7 +273,6 @@
 				BA790DB61E07850500614854 /* RepoObj.swift */,
 				BA790DB91E07850500614854 /* UserObj.swift */,
 			);
-			name = "Obj Model";
 			path = "Obj Model";
 			sourceTree = "<group>";
 		};
@@ -297,7 +281,6 @@
 			children = (
 				BA790DB11E07850500614854 /* MainReducer.swift */,
 			);
-			name = Reducer;
 			path = Reducer;
 			sourceTree = "<group>";
 		};
@@ -307,7 +290,6 @@
 				BA790DB01E07850500614854 /* MainAppState.swift */,
 				BA790DB81E07850500614854 /* RepoState.swift */,
 			);
-			name = State;
 			path = State;
 			sourceTree = "<group>";
 		};
@@ -319,7 +301,6 @@
 				BA790DB51E07850500614854 /* RepoInteractor.swift */,
 				BA790DB71E07850500614854 /* RepoPresenter.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -329,8 +310,8 @@
 				BA790E0E1E079BCE00614854 /* QueueManager */,
 				BA790E0D1E079BCA00614854 /* Request */,
 				BA790DB21E07850500614854 /* Networking.swift */,
+				BA790E071E079B9E00614854 /* Requestable.swift */,
 			);
-			name = Networking;
 			path = Networking;
 			sourceTree = "<group>";
 		};
@@ -342,7 +323,6 @@
 				BA790DF11E078A2A00614854 /* Identifier */,
 				BA790DF41E078A5A00614854 /* Register */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -351,7 +331,6 @@
 			children = (
 				BA790DE01E07898300614854 /* BaseAbility.swift */,
 			);
-			name = Ability;
 			path = Ability;
 			sourceTree = "<group>";
 		};
@@ -361,7 +340,6 @@
 				BA790DE21E0789A200614854 /* BaseView.swift */,
 				BA790DE31E0789A200614854 /* BaseViewController.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -372,7 +350,6 @@
 				BA790DEC1E078A2800614854 /* UIView+Identifier.swift */,
 				BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */,
 			);
-			name = Identifier;
 			path = Identifier;
 			sourceTree = "<group>";
 		};
@@ -382,7 +359,6 @@
 				BA790DE91E078A2800614854 /* UICollectionView+Register.swift */,
 				BA790DEA1E078A2800614854 /* UITableView+Register.swift */,
 			);
-			name = Register;
 			path = Register;
 			sourceTree = "<group>";
 		};
@@ -392,7 +368,6 @@
 				BA790DF81E078C2D00614854 /* Logger.swift */,
 				BA790E001E078DE700614854 /* SlackReporter.swift */,
 			);
-			name = Logger;
 			path = Logger;
 			sourceTree = "<group>";
 		};
@@ -401,7 +376,6 @@
 			children = (
 				BA790DF51E078C2100614854 /* ApplicationManager.swift */,
 			);
-			name = Application;
 			path = Application;
 			sourceTree = "<group>";
 		};
@@ -411,7 +385,6 @@
 				BA790DFC1E078D8A00614854 /* RepoCell.swift */,
 				BA790DFD1E078D8A00614854 /* RepoCell.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -421,7 +394,6 @@
 				BA790DFA1E078C3100614854 /* Application */,
 				BA790DF71E078C2400614854 /* Logger */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -432,7 +404,6 @@
 				BA790DCD1E07853D00614854 /* Store */,
 				BA790DCC1E07853900614854 /* Worker */,
 			);
-			name = App;
 			path = App;
 			sourceTree = "<group>";
 		};
@@ -440,9 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				BA790E051E079B9E00614854 /* FetchRepoRequest.swift */,
-				BA790E071E079B9E00614854 /* Request.swift */,
 			);
-			name = Request;
 			path = Request;
 			sourceTree = "<group>";
 		};
@@ -451,7 +420,6 @@
 			children = (
 				BA790E061E079B9E00614854 /* QueueManager.swift */,
 			);
-			name = QueueManager;
 			path = QueueManager;
 			sourceTree = "<group>";
 		};
@@ -460,7 +428,6 @@
 			children = (
 				BA790E111E079C8300614854 /* Error+Default.swift */,
 			);
-			name = Error;
 			path = Error;
 			sourceTree = "<group>";
 		};
@@ -469,7 +436,6 @@
 			children = (
 				BA790E171E07A77100614854 /* RepoDataSource.swift */,
 			);
-			name = DataSource;
 			path = DataSource;
 			sourceTree = "<group>";
 		};
@@ -478,7 +444,6 @@
 			children = (
 				BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -696,7 +661,7 @@
 				BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */,
 				BA790DC41E07850500614854 /* RepoState.swift in Sources */,
 				BA790DF31E078A3B00614854 /* Identifier.swift in Sources */,
-				BA790E0A1E079B9E00614854 /* Request.swift in Sources */,
+				BA790E0A1E079B9E00614854 /* Requestable.swift in Sources */,
 				BA790DBC1E07850500614854 /* MainAppState.swift in Sources */,
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
 				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,

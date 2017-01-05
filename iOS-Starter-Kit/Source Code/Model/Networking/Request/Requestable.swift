@@ -1,5 +1,5 @@
 //
-//  BaseRequest.swift
+//  Requestable.swift
 //  Titan
 //
 //  Created by Nghia Tran on 10/12/16.
@@ -13,8 +13,8 @@ import PromiseKit
 
 
 //
-// MARK: - Request protocol
-protocol Request: Action, URLRequestConvertible {
+// MARK: - Requestable protocol
+protocol Requestable: Action, URLRequestConvertible {
     
     associatedtype T
     
@@ -24,7 +24,7 @@ protocol Request: Action, URLRequestConvertible {
     
     var httpMethod: HTTPMethod {get}
     
-    var param: Parameters? {get set}
+    var param: Parameters? {get}
     
     var addionalHeader: HeaderParameter? {get}
     
@@ -34,13 +34,13 @@ protocol Request: Action, URLRequestConvertible {
     
     func decode(data: Any) -> T
     
-    init()
+    init(param: Parameters?)
 }
 
 
 //
 // MARK: - Conform URLConvitible from Alamofire
-extension Request {
+extension Requestable {
     func asURLRequest() -> URLRequest {
         return self.buildURLRequest()
     }
@@ -49,7 +49,7 @@ extension Request {
 
 //
 // MARK: - Default implementation
-extension Request {
+extension Requestable {
     
     // Variable
     typealias Parameters = [String: Any]
@@ -66,7 +66,6 @@ extension Request {
     // Param
     var param: Parameters? {
         get { return nil }
-        set {  }
     }
     
     
@@ -135,14 +134,6 @@ extension Request {
                 })
         }
     }
-    
-    
-    // Init
-    init(param: Parameters?) {
-        self.init()
-        self.param = param
-    }
-    
     
     // Build URL Request
     func buildURLRequest() -> URLRequest {
