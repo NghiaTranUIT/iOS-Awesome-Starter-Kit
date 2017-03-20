@@ -48,7 +48,8 @@ Roadmap
 - [ ] Caching Manager 
 - [ ] Authentication
 - [ ] Realm Driver
-- [ ] Router
+- [x] Router
+- [x] Disk Manager
 - [ ] Transition Manager
 - [ ] Test 
 
