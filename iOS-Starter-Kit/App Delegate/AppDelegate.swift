@@ -21,14 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
         // Configure SDKs
         ApplicationManager.sharedInstance.initAllSDKs()
         
-        
         // Init Common things
         ApplicationManager.sharedInstance.initCommon(window: self.window)
-        
         
         return true
     }

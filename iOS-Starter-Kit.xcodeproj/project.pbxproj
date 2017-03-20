@@ -25,8 +25,6 @@
 		BA790DE61E0789A200614854 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DE31E0789A200614854 /* BaseViewController.swift */; };
 		BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DE91E078A2800614854 /* UICollectionView+Register.swift */; };
 		BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DEA1E078A2800614854 /* UITableView+Register.swift */; };
-		BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */; };
-		BA790DF01E078A2800614854 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DEC1E078A2800614854 /* UIView+Identifier.swift */; };
 		BA790DF31E078A3B00614854 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DF21E078A3B00614854 /* Identifier.swift */; };
 		BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DF51E078C2100614854 /* ApplicationManager.swift */; };
 		BA790DF91E078C2D00614854 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA790DF81E078C2D00614854 /* Logger.swift */; };
@@ -45,6 +43,11 @@
 		BA9638871E07800300D16B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9638861E07800300D16B73 /* Assets.xcassets */; };
 		BA96388A1E07800300D16B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9638881E07800300D16B73 /* LaunchScreen.storyboard */; };
 		BA9638951E07800300D16B73 /* iOS_Starter_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9638941E07800300D16B73 /* iOS_Starter_KitTests.swift */; };
+		BA97E2DE1E800D310018C6EB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2DD1E800D310018C6EB /* Router.swift */; };
+		BA97E2E11E800DC70018C6EB /* SettingRepoRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E01E800DC70018C6EB /* SettingRepoRoute.swift */; };
+		BA97E2E41E800DFE0018C6EB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E31E800DFE0018C6EB /* SettingViewController.swift */; };
+		BA97E2E71E800E8E0018C6EB /* Storyboard+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E61E800E8E0018C6EB /* Storyboard+Initialization.swift */; };
+		BA97E2E91E800EE90018C6EB /* Xib+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E81E800EE90018C6EB /* Xib+Initialization.swift */; };
 		FF5D29E4BF7266D79D4ACD09 /* Pods_iOS_Starter_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31C40A72A43E78CEEFD407B /* Pods_iOS_Starter_Kit.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,8 +81,6 @@
 		BA790DE31E0789A200614854 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BA790DE91E078A2800614854 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		BA790DEA1E078A2800614854 /* UITableView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
-		BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Identifier.swift"; sourceTree = "<group>"; };
-		BA790DEC1E078A2800614854 /* UIView+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
 		BA790DF21E078A3B00614854 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		BA790DF51E078C2100614854 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		BA790DF81E078C2D00614854 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -102,6 +103,11 @@
 		BA9638901E07800300D16B73 /* iOS-Starter-KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Starter-KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9638941E07800300D16B73 /* iOS_Starter_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Starter_KitTests.swift; sourceTree = "<group>"; };
 		BA9638961E07800300D16B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA97E2DD1E800D310018C6EB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BA97E2E01E800DC70018C6EB /* SettingRepoRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRepoRoute.swift; sourceTree = "<group>"; };
+		BA97E2E31E800DFE0018C6EB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BA97E2E61E800E8E0018C6EB /* Storyboard+Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Initialization.swift"; sourceTree = "<group>"; };
+		BA97E2E81E800EE90018C6EB /* Xib+Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Xib+Initialization.swift"; sourceTree = "<group>"; };
 		D80B46C7853A3DFBAEE776CB /* Pods-iOS-Starter-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Starter-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Starter-Kit/Pods-iOS-Starter-Kit.debug.xcconfig"; sourceTree = "<group>"; };
 		E96B171F5196F2B6D5464D93 /* Pods-iOS-Starter-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Starter-Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Starter-Kit/Pods-iOS-Starter-Kit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +164,7 @@
 		BA790DC91E07851300614854 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BA97E2E21E800DDF0018C6EB /* Setting */,
 				BA790DCB1E07852B00614854 /* Example - Repo */,
 			);
 			path = Scenes;
@@ -318,6 +325,7 @@
 		BA790DDE1E07897500614854 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BA97E2E51E800E760018C6EB /* Storyboard Xib */,
 				BA790DDF1E07897C00614854 /* Ability */,
 				BA790E101E079C7A00614854 /* Error */,
 				BA790DF11E078A2A00614854 /* Identifier */,
@@ -347,8 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				BA790DF21E078A3B00614854 /* Identifier.swift */,
-				BA790DEC1E078A2800614854 /* UIView+Identifier.swift */,
-				BA790DEB1E078A2800614854 /* UIViewController+Identifier.swift */,
 			);
 			path = Identifier;
 			sourceTree = "<group>";
@@ -442,7 +448,9 @@
 		BA7D8D7A1E0A701500C406D5 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				BA97E2DF1E800DAB0018C6EB /* Route */,
 				BA7D8D7B1E0A702100C406D5 /* RouterManager.swift */,
+				BA97E2DD1E800D310018C6EB /* Router.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -450,10 +458,10 @@
 		BA9638731E07800200D16B73 = {
 			isa = PBXGroup;
 			children = (
+				BA96387E1E07800300D16B73 /* iOS-Starter-Kit */,
 				BBCC903DEA265B33612565ED /* Frameworks */,
 				09EB263E98AF3585C67B94C1 /* Pods */,
 				BA96387D1E07800300D16B73 /* Products */,
-				BA96387E1E07800300D16B73 /* iOS-Starter-Kit */,
 				BA9638931E07800300D16B73 /* iOS-Starter-KitTests */,
 			);
 			sourceTree = "<group>";
@@ -486,6 +494,31 @@
 				BA9638941E07800300D16B73 /* iOS_Starter_KitTests.swift */,
 			);
 			path = "iOS-Starter-KitTests";
+			sourceTree = "<group>";
+		};
+		BA97E2DF1E800DAB0018C6EB /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				BA97E2E01E800DC70018C6EB /* SettingRepoRoute.swift */,
+			);
+			name = Route;
+			sourceTree = "<group>";
+		};
+		BA97E2E21E800DDF0018C6EB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BA97E2E31E800DFE0018C6EB /* SettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		BA97E2E51E800E760018C6EB /* Storyboard Xib */ = {
+			isa = PBXGroup;
+			children = (
+				BA97E2E61E800E8E0018C6EB /* Storyboard+Initialization.swift */,
+				BA97E2E81E800EE90018C6EB /* Xib+Initialization.swift */,
+			);
+			name = "Storyboard Xib";
 			sourceTree = "<group>";
 		};
 		BBCC903DEA265B33612565ED /* Frameworks */ = {
@@ -658,11 +691,11 @@
 				BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */,
 				BA790E031E079A2000614854 /* BaseObj.swift in Sources */,
 				BA790DC31E07850500614854 /* RepoPresenter.swift in Sources */,
-				BA790DEF1E078A2800614854 /* UIViewController+Identifier.swift in Sources */,
 				BA790DC41E07850500614854 /* RepoState.swift in Sources */,
 				BA790DF31E078A3B00614854 /* Identifier.swift in Sources */,
 				BA790E0A1E079B9E00614854 /* Requestable.swift in Sources */,
 				BA790DBC1E07850500614854 /* MainAppState.swift in Sources */,
+				BA97E2DE1E800D310018C6EB /* Router.swift in Sources */,
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
 				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,
 				BA790DD51E0785EA00614854 /* Constants.swift in Sources */,
@@ -671,13 +704,15 @@
 				BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */,
 				BA790E121E079C8300614854 /* Error+Default.swift in Sources */,
 				BA790E181E07A77100614854 /* RepoDataSource.swift in Sources */,
+				BA97E2E71E800E8E0018C6EB /* Storyboard+Initialization.swift in Sources */,
 				BA790DBE1E07850500614854 /* Networking.swift in Sources */,
 				BA790DE61E0789A200614854 /* BaseViewController.swift in Sources */,
 				BA790DBF1E07850500614854 /* RepoConfiguration.swift in Sources */,
 				BA790DC11E07850500614854 /* RepoInteractor.swift in Sources */,
+				BA97E2E41E800DFE0018C6EB /* SettingViewController.swift in Sources */,
 				BA790E081E079B9E00614854 /* FetchRepoRequest.swift in Sources */,
+				BA97E2E91E800EE90018C6EB /* Xib+Initialization.swift in Sources */,
 				BA790DBB1E07850500614854 /* FetchRepoWorker.swift in Sources */,
-				BA790DF01E078A2800614854 /* UIView+Identifier.swift in Sources */,
 				BA790E011E078DE700614854 /* SlackReporter.swift in Sources */,
 				BA790DBD1E07850500614854 /* MainReducer.swift in Sources */,
 				BA790DC21E07850500614854 /* RepoObj.swift in Sources */,
@@ -686,6 +721,7 @@
 				BA790DC61E07850500614854 /* Worker.swift in Sources */,
 				BA790DE11E07898300614854 /* BaseAbility.swift in Sources */,
 				BA790DE51E0789A200614854 /* BaseView.swift in Sources */,
+				BA97E2E11E800DC70018C6EB /* SettingRepoRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

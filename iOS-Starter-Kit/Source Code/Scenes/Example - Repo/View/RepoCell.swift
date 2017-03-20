@@ -29,3 +29,7 @@ class RepoCell: UITableViewCell {
         self.textLabel?.text = repo.name
     }
 }
+
+extension RepoCell: XibInitialization {
+    typealias Element = RepoCell
+}

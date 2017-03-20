@@ -17,7 +17,7 @@ extension UITableView {
     
     /// Helper register cell
     /// The View must conform Identifier protocol
-    func registerCell<T: Identifier>(_ viewType: T.Type) {
-        self.register(viewType.xib(), forCellReuseIdentifier: viewType.identifierView)
+    func registerCell<T: XibInitialization>(_ viewType: T.Type) {
+        self.register(viewType.xib(), forCellReuseIdentifier: viewType.identifier)
     }
 }

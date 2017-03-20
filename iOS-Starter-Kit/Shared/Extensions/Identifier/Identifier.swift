@@ -9,17 +9,24 @@
 import Foundation
 import UIKit
 
-
 //
-// MARK: - Identifier
-// Easily to get ViewID and XIB file
+// MARK: - Identitifer protocol
 protocol Identifier {
     
-    
-    /// ID view
-    static var identifierView: String {get}
-    
-    
-    /// XIB - init XIB from identifierView
-    static func xib() -> UINib?
+    // Static vartiable to get id of object
+    static var identifier: String {get}
 }
+
+//
+// MARK: - Exntension
+extension Identifier {
+    
+    static var identifier: String {
+        return String(describing: self)
+    }
+}
+
+//
+// MARK: - Conform automatically
+extension UIViewController: Identifier {}
+extension UIView: Identifier {}
