@@ -26,5 +26,4 @@ class RepoConfiguration {
         viewController.output = interactor
         viewController.dataSource = presenter
     }
-    
 }

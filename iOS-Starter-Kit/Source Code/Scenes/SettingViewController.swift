@@ -8,8 +8,20 @@
 
 import UIKit
 
+protocol SettingViewControllerOutput {
+    
+}
+
 class SettingViewController: UIViewController {
 
+    //
+    // MARK: - Variable
+    var output: SettingViewControllerOutput?
+    var searchText: String!
+    
+    
+    //
+    // MARK: - View Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +35,12 @@ class SettingViewController: UIViewController {
 
 }
 
+//
+// MARK: - XibInitialization
 extension SettingViewController: XibInitialization {
     typealias Element = SettingViewController
 }
+
+//
+// MARK: - SettingPresenterOutput
+extension SettingViewController: SettingPresenterOutput {}

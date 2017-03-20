@@ -48,6 +48,10 @@
 		BA97E2E41E800DFE0018C6EB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E31E800DFE0018C6EB /* SettingViewController.swift */; };
 		BA97E2E71E800E8E0018C6EB /* Storyboard+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E61E800E8E0018C6EB /* Storyboard+Initialization.swift */; };
 		BA97E2E91E800EE90018C6EB /* Xib+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2E81E800EE90018C6EB /* Xib+Initialization.swift */; };
+		BA97E2EB1E8011730018C6EB /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2EA1E8011730018C6EB /* SettingInteractor.swift */; };
+		BA97E2ED1E80117D0018C6EB /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2EC1E80117D0018C6EB /* SettingPresenter.swift */; };
+		BA97E2EF1E8011860018C6EB /* SettingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2EE1E8011860018C6EB /* SettingConfiguration.swift */; };
+		BA97E2F11E8011AC0018C6EB /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA97E2F01E8011AC0018C6EB /* SettingViewController.xib */; };
 		FF5D29E4BF7266D79D4ACD09 /* Pods_iOS_Starter_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31C40A72A43E78CEEFD407B /* Pods_iOS_Starter_Kit.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +112,10 @@
 		BA97E2E31E800DFE0018C6EB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BA97E2E61E800E8E0018C6EB /* Storyboard+Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Initialization.swift"; sourceTree = "<group>"; };
 		BA97E2E81E800EE90018C6EB /* Xib+Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Xib+Initialization.swift"; sourceTree = "<group>"; };
+		BA97E2EA1E8011730018C6EB /* SettingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		BA97E2EC1E80117D0018C6EB /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		BA97E2EE1E8011860018C6EB /* SettingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingConfiguration.swift; sourceTree = "<group>"; };
+		BA97E2F01E8011AC0018C6EB /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingViewController.xib; path = "iOS-Starter-Kit/Source Code/Scenes/SettingViewController.xib"; sourceTree = SOURCE_ROOT; };
 		D80B46C7853A3DFBAEE776CB /* Pods-iOS-Starter-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Starter-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Starter-Kit/Pods-iOS-Starter-Kit.debug.xcconfig"; sourceTree = "<group>"; };
 		E96B171F5196F2B6D5464D93 /* Pods-iOS-Starter-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Starter-Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Starter-Kit/Pods-iOS-Starter-Kit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +244,7 @@
 		BA790DD11E07859700614854 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				BA97E2F01E8011AC0018C6EB /* SettingViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -508,6 +517,9 @@
 			isa = PBXGroup;
 			children = (
 				BA97E2E31E800DFE0018C6EB /* SettingViewController.swift */,
+				BA97E2EA1E8011730018C6EB /* SettingInteractor.swift */,
+				BA97E2EC1E80117D0018C6EB /* SettingPresenter.swift */,
+				BA97E2EE1E8011860018C6EB /* SettingConfiguration.swift */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -618,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA96388A1E07800300D16B73 /* LaunchScreen.storyboard in Resources */,
+				BA97E2F11E8011AC0018C6EB /* SettingViewController.xib in Resources */,
 				BA9638871E07800300D16B73 /* Assets.xcassets in Resources */,
 				BA9638851E07800300D16B73 /* Main.storyboard in Resources */,
 				BA790DFF1E078D8A00614854 /* RepoCell.xib in Resources */,
@@ -690,16 +703,19 @@
 				BA7D8D7C1E0A702100C406D5 /* RouterManager.swift in Sources */,
 				BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */,
 				BA790E031E079A2000614854 /* BaseObj.swift in Sources */,
+				BA97E2EF1E8011860018C6EB /* SettingConfiguration.swift in Sources */,
 				BA790DC31E07850500614854 /* RepoPresenter.swift in Sources */,
 				BA790DC41E07850500614854 /* RepoState.swift in Sources */,
 				BA790DF31E078A3B00614854 /* Identifier.swift in Sources */,
 				BA790E0A1E079B9E00614854 /* Requestable.swift in Sources */,
 				BA790DBC1E07850500614854 /* MainAppState.swift in Sources */,
+				BA97E2ED1E80117D0018C6EB /* SettingPresenter.swift in Sources */,
 				BA97E2DE1E800D310018C6EB /* Router.swift in Sources */,
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
 				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,
 				BA790DD51E0785EA00614854 /* Constants.swift in Sources */,
 				BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */,
+				BA97E2EB1E8011730018C6EB /* SettingInteractor.swift in Sources */,
 				BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */,
 				BA790DF61E078C2100614854 /* ApplicationManager.swift in Sources */,
 				BA790E121E079C8300614854 /* Error+Default.swift in Sources */,

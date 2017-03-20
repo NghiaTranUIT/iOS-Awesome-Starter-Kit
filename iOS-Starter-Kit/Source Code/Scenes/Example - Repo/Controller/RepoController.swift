@@ -68,6 +68,18 @@ class RepoController: UIViewController {
         self.tableView.registerCell(RepoCell.self)
         self.tableView.dataSource = self.dataSource?.dataSource()
     }
+    
+    func openSettingPate() {
+     
+        // Init Setting Router
+        let router = SettingRouter()
+        router.handleData { (settingVC) in
+            settingVC.searchText = "Passed from Repo viewcontroller"
+        }
+        
+        // Handle route
+        RouterManager.shared.handleRouter(router)
+    }
 }
 
 
