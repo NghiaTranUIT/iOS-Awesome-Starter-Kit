@@ -25,7 +25,8 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Configuration
+        SettingConfiguration.shared.configure(viewController: self)
     }
 
     override func didReceiveMemoryWarning() {
