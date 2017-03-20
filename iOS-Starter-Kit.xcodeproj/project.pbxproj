@@ -52,6 +52,8 @@
 		BA97E2ED1E80117D0018C6EB /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2EC1E80117D0018C6EB /* SettingPresenter.swift */; };
 		BA97E2EF1E8011860018C6EB /* SettingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2EE1E8011860018C6EB /* SettingConfiguration.swift */; };
 		BA97E2F11E8011AC0018C6EB /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA97E2F01E8011AC0018C6EB /* SettingViewController.xib */; };
+		BA97E2F61E80149E0018C6EB /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2F51E80149E0018C6EB /* DiskManager.swift */; };
+		BA97E2F91E8014EC0018C6EB /* SwiftSafer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97E2F81E8014EC0018C6EB /* SwiftSafer.swift */; };
 		FF5D29E4BF7266D79D4ACD09 /* Pods_iOS_Starter_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31C40A72A43E78CEEFD407B /* Pods_iOS_Starter_Kit.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,8 @@
 		BA97E2EC1E80117D0018C6EB /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		BA97E2EE1E8011860018C6EB /* SettingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingConfiguration.swift; sourceTree = "<group>"; };
 		BA97E2F01E8011AC0018C6EB /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingViewController.xib; path = "iOS-Starter-Kit/Source Code/Scenes/SettingViewController.xib"; sourceTree = SOURCE_ROOT; };
+		BA97E2F51E80149E0018C6EB /* DiskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskManager.swift; sourceTree = "<group>"; };
+		BA97E2F81E8014EC0018C6EB /* SwiftSafer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSafer.swift; sourceTree = "<group>"; };
 		D80B46C7853A3DFBAEE776CB /* Pods-iOS-Starter-Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Starter-Kit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Starter-Kit/Pods-iOS-Starter-Kit.debug.xcconfig"; sourceTree = "<group>"; };
 		E96B171F5196F2B6D5464D93 /* Pods-iOS-Starter-Kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Starter-Kit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Starter-Kit/Pods-iOS-Starter-Kit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +185,9 @@
 		BA790DCA1E07852700614854 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA97E2F41E80148F0018C6EB /* Disk Manager */,
+				BA97E2F31E8014430018C6EB /* Authentication */,
+				BA790DD81E07870E00614854 /* Obj Model */,
 				BA790DDC1E07878A00614854 /* Networking */,
 			);
 			path = Model;
@@ -289,7 +296,8 @@
 				BA790DB61E07850500614854 /* RepoObj.swift */,
 				BA790DB91E07850500614854 /* UserObj.swift */,
 			);
-			path = "Obj Model";
+			name = "Obj Model";
+			path = "../../Shared/App/Obj Model";
 			sourceTree = "<group>";
 		};
 		BA790DD91E07875800614854 /* Reducer */ = {
@@ -406,6 +414,7 @@
 		BA790E0B1E079BA700614854 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BA97E2F71E8014D30018C6EB /* EREW */,
 				BA790DFA1E078C3100614854 /* Application */,
 				BA790DF71E078C2400614854 /* Logger */,
 			);
@@ -415,7 +424,6 @@
 		BA790E0C1E079BB400614854 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				BA790DD81E07870E00614854 /* Obj Model */,
 				BA790DCD1E07853D00614854 /* Store */,
 				BA790DCC1E07853900614854 /* Worker */,
 			);
@@ -531,6 +539,29 @@
 				BA97E2E81E800EE90018C6EB /* Xib+Initialization.swift */,
 			);
 			name = "Storyboard Xib";
+			sourceTree = "<group>";
+		};
+		BA97E2F31E8014430018C6EB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		BA97E2F41E80148F0018C6EB /* Disk Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BA97E2F51E80149E0018C6EB /* DiskManager.swift */,
+			);
+			name = "Disk Manager";
+			sourceTree = "<group>";
+		};
+		BA97E2F71E8014D30018C6EB /* EREW */ = {
+			isa = PBXGroup;
+			children = (
+				BA97E2F81E8014EC0018C6EB /* SwiftSafer.swift */,
+			);
+			name = EREW;
 			sourceTree = "<group>";
 		};
 		BBCC903DEA265B33612565ED /* Frameworks */ = {
@@ -701,6 +732,7 @@
 			files = (
 				BA790DFE1E078D8A00614854 /* RepoCell.swift in Sources */,
 				BA7D8D7C1E0A702100C406D5 /* RouterManager.swift in Sources */,
+				BA97E2F61E80149E0018C6EB /* DiskManager.swift in Sources */,
 				BA790DED1E078A2800614854 /* UICollectionView+Register.swift in Sources */,
 				BA790E031E079A2000614854 /* BaseObj.swift in Sources */,
 				BA97E2EF1E8011860018C6EB /* SettingConfiguration.swift in Sources */,
@@ -714,6 +746,7 @@
 				BA790DC01E07850500614854 /* RepoController.swift in Sources */,
 				BA790DF91E078C2D00614854 /* Logger.swift in Sources */,
 				BA790DD51E0785EA00614854 /* Constants.swift in Sources */,
+				BA97E2F91E8014EC0018C6EB /* SwiftSafer.swift in Sources */,
 				BA9638801E07800300D16B73 /* AppDelegate.swift in Sources */,
 				BA97E2EB1E8011730018C6EB /* SettingInteractor.swift in Sources */,
 				BA790DEE1E078A2800614854 /* UITableView+Register.swift in Sources */,

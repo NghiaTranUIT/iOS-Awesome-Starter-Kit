@@ -9,14 +9,11 @@
 import Foundation
 import ObjectMapper
 
-
 class RepoObj: BaseObj {
-    
     
     //
     // MARK: - Variable
     var name: String?
-    
     
     // Mappable
     override func mapping(map: Map) {

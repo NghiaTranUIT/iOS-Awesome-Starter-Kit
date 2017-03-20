@@ -9,7 +9,6 @@
 import Foundation
 import ObjectMapper
 
-
 class UserObj: BaseObj {
     
     //
@@ -17,7 +16,6 @@ class UserObj: BaseObj {
     var name: String?
     var username: String?
     var email: String?
-    
     
     // Mappable
     override func mapping(map: Map) {

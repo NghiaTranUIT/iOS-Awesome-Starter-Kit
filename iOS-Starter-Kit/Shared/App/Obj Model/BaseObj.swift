@@ -9,9 +9,7 @@
 import Foundation
 import ObjectMapper
 
-
 class BaseObj: Mappable {
-    
     
     //
     // MARK: - Variable
@@ -19,7 +17,6 @@ class BaseObj: Mappable {
     var createdAt: Date!
     var updatedAt: Date!
     var className: String!
-    
     
     //
     // MARK: - Init
@@ -31,8 +28,7 @@ class BaseObj: Mappable {
         }
     }
     
-    
-    /// Mapping function
+    // Mapping function
     func mapping(map: Map) {
         self.objectId <- map[Constants.Obj.ObjectId]
         self.createdAt <- (map[Constants.Obj.CreatedAt], APIDateTransform())
